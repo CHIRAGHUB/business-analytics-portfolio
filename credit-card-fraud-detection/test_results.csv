@@ -1,0 +1,2 @@
+Model,Average_precision,PR_AUC_trapezoid,ROC_AUC,Precision,Recall,F2,Alert_rate,Genuine_correctly_passed,Genuine_falsely_flagged,Fraud_missed,Fraud_detected
+Logistic regression,0.7474592161114844,0.7472349159751919,0.9818135558624689,0.9423076923076923,0.6621621621621622,0.7040229885057471,0.0009163641490149085,56669,3,25,49

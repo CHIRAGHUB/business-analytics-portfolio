@@ -1,0 +1,42 @@
+
+PROPOSED FRAUD PREVENTION WORKFLOW
+
+1. Score transactions before authorization using available inputs.
+
+2. Flagged transactions:
+   Request additional customer verification or analyst review.
+
+3. High-priority alerts:
+   Consider a temporary hold under an approved business policy.
+   Do not permanently block a customer solely on this model score.
+
+4. In a real system, add:
+   - Card-level transaction frequency and velocity
+   - Device and IP changes
+   - Merchant risk
+   - Authentication outcomes
+   These fields are absent from this dataset and were not tested here.
+
+5. Provide a customer verification and appeal route.
+
+6. Use confirmed fraud outcomes for retraining.
+   Account for delayed labels.
+
+7. Monitor:
+   - Precision and recall
+   - Genuine transactions falsely flagged
+   - Review workload
+   - Missed fraud value
+   - Changes in data and model performance
+
+8. Validate on recent, longer-duration data before a live pilot.
+
+LIMITATIONS
+
+- Only two days of historical transactions from 2013.
+- V1–V28 are anonymized PCA components.
+- No customer, merchant, device or location identifiers.
+- Exact-duplicate removal is a modeling assumption.
+- Weighted model scores are not calibrated fraud probabilities.
+- No real payment blocking or verified financial savings.
+- Detection supports prevention; it cannot eliminate all fraud.
