@@ -1,0 +1,4 @@
+Dataset,Transactions,Frauds,Fraud_percentage
+Training,170235,342,0.2008987575997885
+Validation,56745,57,0.10044937879989425
+Test,56746,74,0.1304056673598139
